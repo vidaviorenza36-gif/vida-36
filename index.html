@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website edukasi interaktif sistem saraf dan sistem gerak manusia">
+  <title>Digital Human Body Explorer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="#beranda" class="logo">🌿 Body<span>Explorer</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Buka menu" aria-expanded="false">☰</button>
+    <nav id="nav">
+      <a href="#beranda">Beranda</a>
+      <a href="#saraf">Sistem Saraf</a>
+      <a href="#gerak">Sistem Gerak</a>
+      <a href="#hubungan">Hubungan</a>
+      <a href="#kuis">Kuis</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- A. BERANDA -->
+    <section id="beranda" class="hero">
+      <div class="hero-text reveal">
+        <p class="tag">Project IPAS • Kelas X PPLG</p>
+        <h1>Digital Human Body <span>Explorer</span></h1>
+        <p>Jelajahi cara kerja sistem saraf dan sistem gerak manusia lewat materi visual, ilustrasi, diagram alur, dan kuis interaktif.</p>
+        <a href="#saraf" class="btn">Mulai Belajar →</a>
+      </div>
+      <div class="hero-art reveal">
+        <svg viewBox="0 0 420 470" role="img" aria-label="Anatomi sistem saraf manusia: otak, sumsum tulang belakang, dan saraf tepi">
+          <defs>
+            <g id="sil" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" fill="currentColor">
+              <ellipse cx="190" cy="48" rx="30" ry="36"/>
+              <rect x="178" y="78" width="24" height="26" stroke="none"/>
+              <path d="M138 100 Q190 92 242 100 L236 215 Q190 240 144 215Z" stroke-width="6"/>
+              <g fill="none" stroke-width="26"><path d="M140 108 L108 195 L92 275"/><path d="M240 108 L272 195 L288 275"/><path d="M168 225 L162 335 L160 425"/><path d="M212 225 L218 335 L220 425"/></g>
+              <ellipse cx="90" cy="285" rx="11" ry="14" stroke="none"/><ellipse cx="290" cy="285" rx="11" ry="14" stroke="none"/>
+              <ellipse cx="155" cy="436" rx="16" ry="8" stroke="none"/><ellipse cx="225" cy="436" rx="16" ry="8" stroke="none"/>
+            </g>
+            <g id="nl" fill="none" stroke="#fdf7ea" stroke-width="2.2" stroke-linecap="round">
+              <path d="M190 115 Q165 118 150 130M190 135 Q165 138 148 152M190 155 Q165 158 148 175M190 175 Q168 178 150 196"/>
+              <path d="M190 100 Q150 108 140 118 Q118 150 108 195 Q100 238 92 280M92 280 L85 297M92 280 L93 299M92 280 L100 297"/>
+              <path d="M190 225 Q172 250 168 290 Q164 340 160 425M160 425 L152 436M190 215 Q170 220 160 235"/>
+            </g>
+          </defs>
+          <g transform="translate(20 0)">
+            <use href="#sil" color="#c8996d"/>
+            <ellipse cx="190" cy="40" rx="24" ry="19" fill="#e39aa0"/>
+            <path d="M172 38 Q180 28 190 36 T208 34M174 48 Q184 42 192 48 T206 46" stroke="#c4727a" fill="none" stroke-width="2"/>
+            <ellipse cx="203" cy="60" rx="10" ry="6" fill="#c4727a"/>
+            <path d="M190 62 L190 225" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+            <use href="#nl"/><use href="#nl" transform="translate(380 0) scale(-1 1)"/>
+          </g>
+          <text x="4" y="30" class="t">Otak</text><line x1="38" y1="26" x2="194" y2="40" class="ld"/>
+          <text x="416" y="150" text-anchor="end" class="t">Sumsum tulang</text><text x="416" y="164" text-anchor="end" class="t">belakang</text>
+          <line x1="330" y1="154" x2="214" y2="160" class="ld"/>
+          <text x="4" y="250" class="t">Saraf tepi</text><line x1="62" y1="246" x2="118" y2="240" class="ld"/>
+          <text x="416" y="340" text-anchor="end" class="t">Saraf tepi</text><line x1="352" y1="336" x2="238" y2="336" class="ld"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- B. SISTEM SARAF -->
+    <section id="saraf" class="section">
+      <div class="container">
+        <h2 class="reveal">🧠 Sistem Saraf</h2>
+        <p class="lead reveal">Sistem saraf adalah jaringan pengendali tubuh yang menerima rangsangan, mengolahnya, lalu memberi perintah agar tubuh bereaksi.</p>
+        <div class="fig-grid">
+          <figure class="fig reveal">
+            <svg viewBox="0 0 320 250" role="img" aria-label="Anatomi otak dengan 5 bagian bernomor">
+              <defs><clipPath id="cb"><ellipse cx="150" cy="100" rx="120" ry="78"/></clipPath></defs>
+              <path d="M168 170 L160 238 L186 238 L196 185Z" fill="#d9b9ad"/>
+              <g clip-path="url(#cb)" stroke="#fff" stroke-width="2">
+                <path data-lobe="1" class="lobe" fill="#e8a3a8" d="M20 0H115L100 200H20Z"/>
+                <path data-lobe="2" class="lobe" fill="#d97f88" d="M115 0H215L205 100L108 105Z"/>
+                <path data-lobe="4" class="lobe" fill="#c4616c" d="M215 0H290V200H190L205 100Z"/>
+                <path data-lobe="3" class="lobe" fill="#ecc0a8" d="M100 200L108 105L205 100L190 200Z"/>
+                <path d="M55 70Q80 48 100 70T140 60M70 125Q95 103 120 128T172 122M170 48Q190 33 210 55T252 60M215 112Q240 95 262 116" fill="none" stroke="#fff" stroke-width="1.5" opacity=".6"/>
+              </g>
+              <ellipse data-lobe="5" class="lobe" cx="225" cy="182" rx="45" ry="25" fill="#b9505c" stroke="#fff" stroke-width="2"/>
+              <path d="M190 182H262M195 192H255" stroke="#fff" opacity=".6" fill="none"/>
+              <g data-lobe="1" class="num" tabindex="0"><circle cx="65" cy="62" r="12"/><text x="65" y="62">1</text></g>
+              <g data-lobe="2" class="num" tabindex="0"><circle cx="160" cy="45" r="12"/><text x="160" y="45">2</text></g>
+              <g data-lobe="3" class="num" tabindex="0"><circle cx="150" cy="150" r="12"/><text x="150" y="150">3</text></g>
+              <g data-lobe="4" class="num" tabindex="0"><circle cx="252" cy="90" r="12"/><text x="252" y="90">4</text></g>
+              <g data-lobe="5" class="num" tabindex="0"><circle cx="225" cy="182" r="12"/><text x="225" y="182">5</text></g>
+              <text x="206" y="232" class="t">Batang otak</text><line x1="200" y1="228" x2="184" y2="216" class="ld"/>
+            </svg>
+            <figcaption>Otak tampak dari samping. Klik nomor untuk melihat fungsinya.</figcaption>
+          </figure>
+          <div class="fig reveal">
+            <h3>Bagian-bagian otak</h3>
+            <div class="lobe-list">
+              <button class="lobe-btn" data-lobe="1">1. Lobus frontal</button>
+              <button class="lobe-btn" data-lobe="2">2. Lobus parietal</button>
+              <button class="lobe-btn" data-lobe="3">3. Lobus temporal</button>
+              <button class="lobe-btn" data-lobe="4">4. Lobus oksipital</button>
+              <button class="lobe-btn" data-lobe="5">5. Serebelum (otak kecil)</button>
+            </div>
+            <p class="step-info" id="lobeInfo">👆 Pilih salah satu bagian otak untuk melihat fungsinya.</p>
+          </div>
+        </div>
+        <div class="cards three">
+          <article class="card reveal">
+            <div class="icon">🧠</div>
+            <h3>Otak</h3>
+            <p>Pusat pengendali seluruh tubuh yang berada di dalam tengkorak.</p>
+            <ul>
+              <li><b>Otak besar:</b> berpikir, mengingat, dan gerak sadar.</li>
+              <li><b>Otak kecil:</b> keseimbangan dan koordinasi gerak.</li>
+              <li><b>Batang otak:</b> mengatur napas dan detak jantung.</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <div class="icon">🦴</div>
+            <h3>Sumsum Tulang Belakang</h3>
+            <p>Saraf panjang yang terlindungi ruas-ruas tulang belakang.</p>
+            <ul>
+              <li>Menghubungkan otak dengan seluruh tubuh.</li>
+              <li>Menjadi pusat pengatur gerak refleks.</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <div class="icon">🖐️</div>
+            <h3>Saraf Tepi</h3>
+            <p>Saraf yang menyebar dari otak dan sumsum tulang belakang ke seluruh tubuh.</p>
+            <ul>
+              <li><b>Saraf sensorik:</b> membawa rangsang ke pusat saraf.</li>
+              <li><b>Saraf motorik:</b> membawa perintah ke otot.</li>
+              <li>Terdiri dari 12 pasang saraf kranial dan 31 pasang saraf spinal.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- C. SISTEM GERAK -->
+    <section id="gerak" class="section alt">
+      <div class="container">
+        <h2 class="reveal">💪 Sistem Gerak</h2>
+        <p class="lead reveal">Sistem gerak terdiri dari tulang, sendi, dan otot yang bekerja sama sehingga kita bisa bergerak, berdiri, dan beraktivitas.</p>
+
+        <div class="fig-grid">
+          <figure class="fig reveal">
+            <svg viewBox="0 0 460 450" role="img" aria-label="Rangka manusia dengan label tulang dan sendi">
+              <defs>
+                <g id="bl" fill="none" stroke-linecap="round"><path d="M186 102L144 108M140 108L110 193M110 193L94 272M168 232L162 335M162 335L160 425"/></g>
+                <g id="half">
+                  <path d="M190 112Q145 116 149 140M190 128Q142 132 147 156M190 144Q142 149 149 172M190 160Q146 165 154 184" fill="none" stroke="#a89878" stroke-width="3"/>
+                  <use href="#bl" stroke="#a89878" stroke-width="12"/><use href="#bl" stroke="#f4ecd8" stroke-width="8"/>
+                  <path d="M190 205Q150 192 146 222Q154 250 182 244Z" fill="#f4ecd8" stroke="#a89878" stroke-width="2"/>
+                  <ellipse cx="92" cy="282" rx="10" ry="13" fill="#f4ecd8" stroke="#a89878" stroke-width="2"/>
+                  <ellipse cx="152" cy="430" rx="17" ry="7" fill="#f4ecd8" stroke="#a89878" stroke-width="2"/>
+                  <g fill="#7d9a6e" stroke="#fff" stroke-width="2"><circle cx="140" cy="108" r="8"/><circle cx="110" cy="193" r="8"/><circle cx="168" cy="232" r="8"/><circle cx="162" cy="335" r="8"/></g>
+                </g>
+              </defs>
+              <g transform="translate(40 0)">
+                <use href="#sil" color="#eef0e4"/>
+                <ellipse cx="190" cy="42" rx="27" ry="31" fill="#f4ecd8" stroke="#a89878" stroke-width="2"/>
+                <path d="M172 66Q190 92 208 66Q190 74 172 66Z" fill="#f4ecd8" stroke="#a89878" stroke-width="2"/>
+                <path d="M190 94V205" stroke="#a89878" stroke-width="11" stroke-dasharray="7 3" fill="none"/>
+                <rect x="185" y="108" width="10" height="50" rx="5" fill="#f4ecd8" stroke="#a89878" stroke-width="2"/>
+                <use href="#half"/><use href="#half" transform="translate(380 0) scale(-1 1)"/>
+              </g>
+              <text x="4" y="98" class="tj">Sendi bahu</text><line x1="60" y1="96" x2="174" y2="106" class="ld"/>
+              <text x="4" y="150" class="t">Humerus</text><line x1="52" y1="148" x2="160" y2="150" class="ld"/>
+              <text x="4" y="198" class="tj">Sendi siku</text><line x1="58" y1="196" x2="142" y2="193" class="ld"/>
+              <text x="4" y="248" class="t">Radius &amp; ulna</text><line x1="78" y1="244" x2="136" y2="236" class="ld"/>
+              <text x="456" y="40" text-anchor="end" class="t">Tengkorak</text><line x1="396" y1="36" x2="259" y2="42" class="ld"/>
+              <text x="456" y="135" text-anchor="end" class="t">Tulang rusuk</text><line x1="380" y1="132" x2="272" y2="140" class="ld"/>
+              <text x="456" y="190" text-anchor="end" class="t">Tulang belakang</text><line x1="364" y1="188" x2="236" y2="190" class="ld"/>
+              <text x="456" y="225" text-anchor="end" class="t">Panggul</text><line x1="404" y1="222" x2="274" y2="224" class="ld"/>
+              <text x="456" y="268" text-anchor="end" class="tj">Sendi panggul</text><line x1="370" y1="264" x2="256" y2="236" class="ld"/>
+              <text x="456" y="295" text-anchor="end" class="t">Femur</text><line x1="420" y1="292" x2="260" y2="290" class="ld"/>
+              <text x="456" y="338" text-anchor="end" class="tj">Sendi lutut</text><line x1="388" y1="334" x2="266" y2="335" class="ld"/>
+              <text x="456" y="388" text-anchor="end" class="t">Tibia</text><line x1="424" y1="385" x2="264" y2="385" class="ld"/>
+            </svg>
+            <figcaption>Rangka: tulang (krem) dan sendi (hijau).</figcaption>
+          </figure>
+          <figure class="fig reveal">
+            <svg viewBox="0 0 460 450" role="img" aria-label="Otot rangka manusia dengan label">
+              <defs>
+                <g id="mh" fill="#d08c74" stroke="#a65f48" stroke-width="1.5">
+                  <circle cx="141" cy="112" r="13"/><path d="M188 108Q160 102 152 124Q166 146 188 138Z"/>
+                  <ellipse cx="125" cy="152" rx="10" ry="27" transform="rotate(16 125 152)"/>
+                  <ellipse cx="101" cy="234" rx="9" ry="33" transform="rotate(12 101 234)"/>
+                  <ellipse cx="165" cy="282" rx="14" ry="50"/><ellipse cx="161" cy="380" rx="10" ry="35"/>
+                </g>
+              </defs>
+              <g transform="translate(40 0)">
+                <use href="#sil" color="#f0e6d6"/>
+                <use href="#mh"/><use href="#mh" transform="translate(380 0) scale(-1 1)"/>
+                <rect x="174" y="144" width="32" height="70" rx="9" fill="#e0a690" stroke="#a65f48" stroke-width="1.5"/>
+                <path d="M190 144V214M174 166H206M174 190H206" stroke="#a65f48" fill="none"/>
+              </g>
+              <text x="4" y="100" class="t">Deltoid (bahu)</text><line x1="88" y1="98" x2="178" y2="110" class="ld"/>
+              <text x="4" y="152" class="t">Biseps</text><line x1="46" y1="150" x2="160" y2="152" class="ld"/>
+              <text x="4" y="238" class="t">Otot lengan bawah</text><line x1="108" y1="234" x2="136" y2="234" class="ld"/>
+              <text x="456" y="125" text-anchor="end" class="t">Otot dada</text><line x1="400" y1="122" x2="256" y2="125" class="ld"/>
+              <text x="456" y="182" text-anchor="end" class="t">Otot perut</text><line x1="404" y1="179" x2="248" y2="180" class="ld"/>
+              <text x="456" y="285" text-anchor="end" class="t">Otot paha depan</text><line x1="368" y1="282" x2="268" y2="284" class="ld"/>
+              <text x="456" y="385" text-anchor="end" class="t">Otot tungkai bawah</text><line x1="352" y1="382" x2="266" y2="382" class="ld"/>
+            </svg>
+            <figcaption>Otot rangka yang menggerakkan tulang.</figcaption>
+          </figure>
+        </div>
+        <figure class="arm reveal">
+          <svg viewBox="0 0 320 190" role="img" aria-label="Ilustrasi lengan: tulang, sendi siku, dan otot">
+            <g stroke-linecap="round">
+              <line x1="40" y1="130" x2="160" y2="100" stroke="#b9a98a" stroke-width="22"/>
+              <line x1="40" y1="130" x2="160" y2="100" stroke="#f3ead2" stroke-width="16"/>
+              <line x1="160" y1="100" x2="270" y2="50" stroke="#b9a98a" stroke-width="22"/>
+              <line x1="160" y1="100" x2="270" y2="50" stroke="#f3ead2" stroke-width="16"/>
+            </g>
+            <ellipse cx="100" cy="95" rx="50" ry="13" transform="rotate(-14 100 95)" fill="#d08c74" opacity=".85"/>
+            <circle cx="160" cy="100" r="15" fill="#7d9a6e"/>
+            <text x="30" y="40" class="lbl">Otot (biseps)</text><line x1="75" y1="46" x2="95" y2="82" class="ln"/>
+            <text x="130" y="170" class="lbl">Sendi siku</text><line x1="160" y1="116" x2="160" y2="156" class="ln"/>
+            <text x="215" y="130" class="lbl">Tulang</text><line x1="235" y1="119" x2="225" y2="68" class="ln"/>
+          </svg>
+          <figcaption>Tulang menjadi rangka, sendi menghubungkan tulang, dan otot menarik tulang sehingga terjadi gerakan.</figcaption>
+        </figure>
+
+        <div class="cards three">
+          <article class="card reveal">
+            <div class="icon">🦴</div>
+            <h3>Tulang</h3>
+            <p>Orang dewasa memiliki 206 tulang.</p>
+            <ul>
+              <li>Menopang dan membentuk tubuh.</li>
+              <li>Melindungi organ (tengkorak melindungi otak).</li>
+              <li>Tempat melekatnya otot dan penyimpan kalsium.</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <div class="icon">🦵</div>
+            <h3>Sendi</h3>
+            <p>Hubungan antartulang yang memungkinkan gerakan.</p>
+            <ul>
+              <li><b>Engsel:</b> siku, lutut (membuka-menutup).</li>
+              <li><b>Peluru:</b> bahu, panggul (segala arah).</li>
+              <li><b>Putar:</b> leher saat menoleh.</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <div class="icon">💪</div>
+            <h3>Otot</h3>
+            <p>Jaringan yang mampu berkontraksi (memendek) dan relaksasi.</p>
+            <ul>
+              <li><b>Otot lurik:</b> menempel di tulang, bekerja sadar.</li>
+              <li><b>Otot polos:</b> di usus dan lambung, tak sadar.</li>
+              <li><b>Otot jantung:</b> memompa darah, tak sadar.</li>
+            </ul>
+          </article>
+        </div>
+        <p class="example reveal"><b>Contoh sehari-hari:</b> saat mengangkat tas, biseps berkontraksi dan sendi siku menekuk; saat meletakkannya, triseps bekerja dan lengan lurus kembali.</p>
+      </div>
+    </section>
+
+    <!-- D. HUBUNGAN -->
+    <section id="hubungan" class="section">
+      <div class="container">
+        <h2 class="reveal">🔄 Hubungan Sistem Saraf dan Gerak</h2>
+        <p class="lead reveal">Mata, kulit, dan telinga menerima rangsangan. Saraf sensorik mengirimnya ke pusat saraf, lalu saraf motorik membawa perintah ke otot agar bergerak.</p>
+
+        <div class="tabs reveal" role="tablist">
+          <button class="tab active" data-target="sadar" role="tab">Gerak Sadar</button>
+          <button class="tab" data-target="refleks" role="tab">Gerak Refleks</button>
+        </div>
+
+        <div class="flow-panel active" id="sadar">
+          <div class="flow">
+            <div class="step">👀<b>Rangsang</b><small>Melihat bola datang</small></div>
+            <span class="arrow">➜</span>
+            <div class="step">👂<b>Saraf sensorik</b><small>Mengirim informasi</small></div>
+            <span class="arrow">➜</span>
+            <div class="step hl">🧠<b>Otak</b><small>Memutuskan & memerintah</small></div>
+            <span class="arrow">➜</span>
+            <div class="step">🏃<b>Saraf motorik</b><small>Membawa perintah</small></div>
+            <span class="arrow">➜</span>
+            <div class="step">💪<b>Otot</b><small>Menangkap bola</small></div>
+          </div>
+          <p class="example"><b>Contoh:</b> menulis, berjalan ke sekolah, atau menendang bola. Gerakan ini kita sadari dan kita kehendaki.</p>
+        </div>
+
+        <div class="flow-panel" id="refleks">
+          <div class="flow">
+            <div class="step">🔥<b>Rangsang</b><small>Tangan kena benda panas</small></div>
+            <span class="arrow">➜</span>
+            <div class="step">👂<b>Saraf sensorik</b><small>Mengirim sinyal</small></div>
+            <span class="arrow">➜</span>
+            <div class="step hl">🦴<b>Sumsum tulang belakang</b><small>Langsung memutuskan</small></div>
+            <span class="arrow">➜</span>
+            <div class="step">🏃<b>Saraf motorik</b><small>Membawa perintah</small></div>
+            <span class="arrow">➜</span>
+            <div class="step">💪<b>Otot</b><small>Tangan menarik diri</small></div>
+          </div>
+          <p class="example"><b>Contoh:</b> menarik tangan saat tersentuh panas, berkedip, atau kaki terangkat saat menginjak duri. Jalurnya lebih pendek sehingga lebih cepat; otak baru diberi tahu setelahnya.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- E. KUIS -->
+    <section id="kuis" class="section alt">
+      <div class="container">
+        <h2 class="reveal">📝 Kuis Interaktif</h2>
+        <p class="lead reveal">Uji pemahamanmu! Klik salah satu jawaban.</p>
+        <div class="quiz reveal" id="quiz">
+          <div class="progress"><div class="bar" id="bar"></div></div>
+          <p class="counter" id="counter"></p>
+          <h3 id="question"></h3>
+          <div class="options" id="options"></div>
+          <p class="feedback" id="feedback" aria-live="polite"></p>
+          <button class="btn" id="nextBtn" hidden>Lanjut →</button>
+        </div>
+        <div class="quiz result" id="result" hidden>
+          <h3>Kuis Selesai! 🎉</h3>
+          <p class="score" id="score"></p>
+          <p id="message"></p>
+          <button class="btn" id="restartBtn">Ulangi Kuis</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Digital Human Body Explorer • Project IPAS Kelas X PPLG</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
